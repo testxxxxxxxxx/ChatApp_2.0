@@ -10,6 +10,10 @@ Connect Connect::operator=(const Connect &c)
 
     return Connect();
 }
+MYSQL Connect::connectDB()
+{
+
+}
 string Connect::*readData(MYSQL *conn)
 {
 
@@ -25,4 +29,8 @@ bool Connect::updateData(MYSQL *conn)
 bool Connect::deleteData(MYSQL *conn)
 {
     
+}
+void Connect::closeDB(MYSQL *conn)
+{
+
 }

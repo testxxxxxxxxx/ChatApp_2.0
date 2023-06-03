@@ -196,33 +196,6 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/test_0.dir/build.make CMakeFiles/test_0.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-scripts.o: scripts.cpp.o
-
-.PHONY : scripts.o
-
-# target to build an object file
-scripts.cpp.o:
-	$(MAKE) -f CMakeFiles/test_0.dir/build.make CMakeFiles/test_0.dir/scripts.cpp.o
-.PHONY : scripts.cpp.o
-
-scripts.i: scripts.cpp.i
-
-.PHONY : scripts.i
-
-# target to preprocess a source file
-scripts.cpp.i:
-	$(MAKE) -f CMakeFiles/test_0.dir/build.make CMakeFiles/test_0.dir/scripts.cpp.i
-.PHONY : scripts.cpp.i
-
-scripts.s: scripts.cpp.s
-
-.PHONY : scripts.s
-
-# target to generate assembly for a file
-scripts.cpp.s:
-	$(MAKE) -f CMakeFiles/test_0.dir/build.make CMakeFiles/test_0.dir/scripts.cpp.s
-.PHONY : scripts.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -239,9 +212,6 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... scripts.o"
-	@echo "... scripts.i"
-	@echo "... scripts.s"
 .PHONY : help
 
 

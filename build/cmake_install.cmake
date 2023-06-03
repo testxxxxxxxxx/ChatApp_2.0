@@ -54,10 +54,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/src" TYPE FILE FILES
-    "/home/marcin/projects/ChatAppCpp2.0/main.cpp"
-    "/home/marcin/projects/ChatAppCpp2.0/scripts.cpp"
-    )
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/src" TYPE FILE FILES "/home/marcin/projects/ChatAppCpp2.0/main.cpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
