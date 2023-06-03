@@ -1,0 +1,2 @@
+/home/marcin/projects/ChatAppCpp2.0/build/CMakeFiles/rebuild_cache.dir
+/home/marcin/projects/ChatAppCpp2.0/build/CMakeFiles/edit_cache.dir
