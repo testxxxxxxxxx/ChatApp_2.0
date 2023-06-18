@@ -169,6 +169,33 @@ test_0/fast:
 	$(MAKE) -f CMakeFiles/test_0.dir/build.make CMakeFiles/test_0.dir/build
 .PHONY : test_0/fast
 
+Scripts/scriptsConnect.o: Scripts/scriptsConnect.cpp.o
+
+.PHONY : Scripts/scriptsConnect.o
+
+# target to build an object file
+Scripts/scriptsConnect.cpp.o:
+	$(MAKE) -f CMakeFiles/test_0.dir/build.make CMakeFiles/test_0.dir/Scripts/scriptsConnect.cpp.o
+.PHONY : Scripts/scriptsConnect.cpp.o
+
+Scripts/scriptsConnect.i: Scripts/scriptsConnect.cpp.i
+
+.PHONY : Scripts/scriptsConnect.i
+
+# target to preprocess a source file
+Scripts/scriptsConnect.cpp.i:
+	$(MAKE) -f CMakeFiles/test_0.dir/build.make CMakeFiles/test_0.dir/Scripts/scriptsConnect.cpp.i
+.PHONY : Scripts/scriptsConnect.cpp.i
+
+Scripts/scriptsConnect.s: Scripts/scriptsConnect.cpp.s
+
+.PHONY : Scripts/scriptsConnect.s
+
+# target to generate assembly for a file
+Scripts/scriptsConnect.cpp.s:
+	$(MAKE) -f CMakeFiles/test_0.dir/build.make CMakeFiles/test_0.dir/Scripts/scriptsConnect.cpp.s
+.PHONY : Scripts/scriptsConnect.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -209,6 +236,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test_0"
+	@echo "... Scripts/scriptsConnect.o"
+	@echo "... Scripts/scriptsConnect.i"
+	@echo "... Scripts/scriptsConnect.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

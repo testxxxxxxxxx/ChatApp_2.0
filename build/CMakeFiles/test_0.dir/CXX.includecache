@@ -6,3 +6,19 @@
 
 #IncludeRegexTransform: 
 
+/home/marcin/projects/ChatAppCpp2.0/Classes/Connect.hpp
+iostream
+-
+mysql/mysql.h
+-
+
+/home/marcin/projects/ChatAppCpp2.0/Scripts/scriptsConnect.cpp
+iostream
+-
+../Classes/Connect.hpp
+/home/marcin/projects/ChatAppCpp2.0/Classes/Connect.hpp
+mysql/mysql.h
+-
+cstdarg
+-
+

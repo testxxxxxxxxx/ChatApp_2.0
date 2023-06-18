@@ -1,6 +1,11 @@
 [
 {
   "directory": "/home/marcin/projects/ChatAppCpp2.0/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9   -I/usr/include/mysql  -g   -o CMakeFiles/test_0.dir/Scripts/scriptsConnect.cpp.o -c /home/marcin/projects/ChatAppCpp2.0/Scripts/scriptsConnect.cpp",
+  "file": "/home/marcin/projects/ChatAppCpp2.0/Scripts/scriptsConnect.cpp"
+},
+{
+  "directory": "/home/marcin/projects/ChatAppCpp2.0/build",
   "command": "/bin/x86_64-linux-gnu-g++-9   -I/usr/include/mysql  -g   -o CMakeFiles/test_0.dir/main.cpp.o -c /home/marcin/projects/ChatAppCpp2.0/main.cpp",
   "file": "/home/marcin/projects/ChatAppCpp2.0/main.cpp"
 }

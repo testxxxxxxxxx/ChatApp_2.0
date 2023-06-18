@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/test_0.dir/Scripts/scriptsConnect.cpp.o"
   "CMakeFiles/test_0.dir/main.cpp.o"
   "test_0"
   "test_0.pdb"
