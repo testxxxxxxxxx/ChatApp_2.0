@@ -1,5 +1,6 @@
 #include <iostream>
 #include "Classes/Connect.hpp"
+#include "Classes/User.hpp"
 
 using namespace std;
 using namespace ConnectForDatabase;

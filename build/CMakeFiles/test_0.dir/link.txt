@@ -1,1 +1,1 @@
-/bin/x86_64-linux-gnu-g++-9  -g  -rdynamic CMakeFiles/test_0.dir/Scripts/scriptsConnect.cpp.o CMakeFiles/test_0.dir/main.cpp.o  -o test_0  -lmysqlclient -lcurl 
+/bin/x86_64-linux-gnu-g++-9  -g  -rdynamic CMakeFiles/test_0.dir/Scripts/scriptsConnect.cpp.o CMakeFiles/test_0.dir/Scripts/scriptsUser.cpp.o CMakeFiles/test_0.dir/main.cpp.o  -o test_0  -lmysqlclient -lcurl 

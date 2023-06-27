@@ -4,6 +4,11 @@
 CMakeFiles/test_0.dir/Scripts/scriptsConnect.cpp.o
  /home/marcin/projects/ChatAppCpp2.0/Classes/Connect.hpp
  /home/marcin/projects/ChatAppCpp2.0/Scripts/scriptsConnect.cpp
+CMakeFiles/test_0.dir/Scripts/scriptsUser.cpp.o
+ /home/marcin/projects/ChatAppCpp2.0/Classes/Connect.hpp
+ /home/marcin/projects/ChatAppCpp2.0/Classes/User.hpp
+ /home/marcin/projects/ChatAppCpp2.0/Scripts/scriptsUser.cpp
 CMakeFiles/test_0.dir/main.cpp.o
  /home/marcin/projects/ChatAppCpp2.0/Classes/Connect.hpp
+ /home/marcin/projects/ChatAppCpp2.0/Classes/User.hpp
  /home/marcin/projects/ChatAppCpp2.0/main.cpp

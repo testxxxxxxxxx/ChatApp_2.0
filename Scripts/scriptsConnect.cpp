@@ -1,7 +1,6 @@
 #include <iostream>
 #include "../Classes/Connect.hpp"
 #include <mysql/mysql.h>
-#include <cstdarg>
 
 using namespace std;
 using namespace ConnectForDatabase;
@@ -67,66 +66,9 @@ bool Connect::execQuery(MYSQL *conn,string query)
 
     return true;
 }
-bool Connect::insertData(MYSQL *conn,string table,int numberOfCoumns,...)
-{
-    va_list columns;
-    va_start(columns,numberOfCoumns);
-
-    Connect::emptyData();
-
-    for(int i=0;i<numberOfCoumns;i++)
-    {
-        data[i] = va_arg(columns,string);
-
-    }
-
-    va_end(columns);
-
-    string query;
-    string queryA;
-    string queryF;
-
-    for(int v=0;v<numberOfCoumns;v++)
-    {
-        queryA+=data[v]+",";
-
-    }
-
-    for(int i=0;i<numberOfCoumns-1;i++)
-    {
-        queryF+=queryA[i];
-
-    }
-
-    query="INSERT INTO "+table+"("+queryF+")";
-
-    const char *cQuery=query.c_str();
-
-    if(!mysql_query(conn,cQuery))
-        return false;
-
-    return true;
-}
-bool Connect::updateData(MYSQL *conn)
-{
-
-}
-bool Connect::deleteData(MYSQL *conn)
-{
-    
-}
 void Connect::closeDB(MYSQL *conn)
 {
     mysql_close(conn);
 
     return;
-}
-void Connect::emptyData()
-{
-    for(int i=0;i<100;i++)
-    {
-        data[i]="";
-
-    }
-
 }

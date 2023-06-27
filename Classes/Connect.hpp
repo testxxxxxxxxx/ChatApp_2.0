@@ -5,7 +5,7 @@
 
 using namespace std;
 
-#define connectVar
+#define connectVar 1
 #pragma once
 
 namespace ConnectForDatabase
@@ -31,11 +31,7 @@ namespace ConnectForDatabase
             static void selectDB(MYSQL *conn,const char *table);
             static string *readData(MYSQL *conn,string query);
             static bool execQuery(MYSQL *conn,string query);
-            static bool insertData(MYSQL *conn,string table,int numberOfColumns,...);
-            static bool updateData(MYSQL *conn);
-            static bool deleteData(MYSQL *conn);
             static void closeDB(MYSQL *conn);
-            static void emptyData();
 
     };
     
