@@ -29,11 +29,13 @@ bool User::loginUser()
 {
     MYSQL conn=Connect::connectDB("localhost","test","test");
 
-    Connect::selectDB(&conn,"users");
+    Connect::selectDB(&conn,"chatAppCpp2");
 
-    string query="SELECT u.password FROM users AS u WHERE u.login="+this->email+" AND u.password="+this->password;
+    string query="SELECT u.password FROM users AS u WHERE u.login='Test@example.com' AND u.password='Test'";
 
-    if(Connect::readData(&conn,query))
+    string *data=Connect::readData(&conn,query);
+
+    if(Connect::readData(&conn,query)!=nullptr)
         return true;
        
     return false;

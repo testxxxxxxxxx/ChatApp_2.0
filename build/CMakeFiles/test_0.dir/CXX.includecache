@@ -16,27 +16,11 @@ mysql/mysql.h
 iostream
 -
 
-/home/marcin/projects/ChatAppCpp2.0/Scripts/scriptsConnect.cpp
-iostream
--
-../Classes/Connect.hpp
-/home/marcin/projects/ChatAppCpp2.0/Classes/Connect.hpp
-mysql/mysql.h
--
-
 /home/marcin/projects/ChatAppCpp2.0/Scripts/scriptsUser.cpp
 iostream
 -
 ../Classes/Connect.hpp
 /home/marcin/projects/ChatAppCpp2.0/Classes/Connect.hpp
 ../Classes/User.hpp
-/home/marcin/projects/ChatAppCpp2.0/Classes/User.hpp
-
-/home/marcin/projects/ChatAppCpp2.0/main.cpp
-iostream
--
-Classes/Connect.hpp
-/home/marcin/projects/ChatAppCpp2.0/Classes/Connect.hpp
-Classes/User.hpp
 /home/marcin/projects/ChatAppCpp2.0/Classes/User.hpp
 

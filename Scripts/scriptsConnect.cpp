@@ -18,7 +18,7 @@ Connect Connect::operator=(const Connect &c)
 MYSQL Connect::connectDB(const char *host0,const char *user0,const char *password0)
 {
     MYSQL *conn;
-    
+
     conn=mysql_init(nullptr);
 
     if(!(conn=mysql_real_connect(conn,host0,user0,password0,"mysql",0,NULL,0)))
@@ -28,7 +28,7 @@ MYSQL Connect::connectDB(const char *host0,const char *user0,const char *passwor
 }
 void Connect::selectDB(MYSQL *conn,const char *table)
 {
-    if(!mysql_select_db(conn,table))
+    if(mysql_select_db(conn,table)<0)
         throw mysql_errno(conn);
 
     return;
@@ -40,14 +40,14 @@ string *Connect::readData(MYSQL *conn,string query)
 
     const char *cQuery=query.c_str();
 
-    if(!mysql_query(conn,cQuery))
+    if(mysql_query(conn,cQuery)<0)
         throw mysql_errno(conn);
 
     res=mysql_store_result(conn);
 
     while((row=mysql_fetch_row(res))!=nullptr)
     {
-        for(int i=0;i<=mysql_num_fields(res);i++)
+        for(int i=0;i<mysql_num_fields(res);i++)
         {
             data[i]=row[i];
 
