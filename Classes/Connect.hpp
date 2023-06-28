@@ -27,7 +27,7 @@ namespace ConnectForDatabase
 
             Connect operator=(const Connect &c);
 
-            static void connectDB(char *host0,char *user0,char *password0);
+            static MYSQL connectDB(const char *host0,const char *user0,const char *password0);
             static void selectDB(MYSQL *conn,const char *table);
             static string *readData(MYSQL *conn,string query);
             static bool execQuery(MYSQL *conn,string query);

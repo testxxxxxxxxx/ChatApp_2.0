@@ -15,7 +15,7 @@ Connect Connect::operator=(const Connect &c)
 
     return Connect();
 }
-void Connect::connectDB(char *host0,char *user0,char *password0)
+MYSQL Connect::connectDB(const char *host0,const char *user0,const char *password0)
 {
     MYSQL *conn;
     
@@ -24,7 +24,7 @@ void Connect::connectDB(char *host0,char *user0,char *password0)
     if(!(conn=mysql_real_connect(conn,host0,user0,password0,"mysql",0,NULL,0)))
         throw mysql_errno(conn);
 
-    return;
+    return *conn;
 }
 void Connect::selectDB(MYSQL *conn,const char *table)
 {
