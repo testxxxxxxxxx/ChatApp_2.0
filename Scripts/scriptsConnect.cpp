@@ -72,3 +72,11 @@ void Connect::closeDB(MYSQL *conn)
 
     return;
 }
+string Connect::escapeString(MYSQL *conn,const char *text)
+{
+    string result;
+
+    int state=mysql_real_escape_string(conn,(char *)result.c_str(),text,result.length());
+
+    return result;
+}

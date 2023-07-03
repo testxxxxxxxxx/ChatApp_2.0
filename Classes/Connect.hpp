@@ -32,6 +32,7 @@ namespace ConnectForDatabase
             static string *readData(MYSQL *conn,string query);
             static bool execQuery(MYSQL *conn,string query);
             static void closeDB(MYSQL *conn);
+            static string escapeString(MYSQL *conn,const char *text);
 
     };
     
