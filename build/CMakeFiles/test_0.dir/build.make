@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/marcin/projects/ChatAppCpp2.0
+CMAKE_SOURCE_DIR = /root/project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/marcin/projects/ChatAppCpp2.0/build
+CMAKE_BINARY_DIR = /root/project/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/test_0.dir/depend.make
@@ -59,42 +59,42 @@ include CMakeFiles/test_0.dir/flags.make
 
 CMakeFiles/test_0.dir/Scripts/scriptsConnect.cpp.o: CMakeFiles/test_0.dir/flags.make
 CMakeFiles/test_0.dir/Scripts/scriptsConnect.cpp.o: ../Scripts/scriptsConnect.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcin/projects/ChatAppCpp2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test_0.dir/Scripts/scriptsConnect.cpp.o"
-	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_0.dir/Scripts/scriptsConnect.cpp.o -c /home/marcin/projects/ChatAppCpp2.0/Scripts/scriptsConnect.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test_0.dir/Scripts/scriptsConnect.cpp.o"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_0.dir/Scripts/scriptsConnect.cpp.o -c /root/project/Scripts/scriptsConnect.cpp
 
 CMakeFiles/test_0.dir/Scripts/scriptsConnect.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_0.dir/Scripts/scriptsConnect.cpp.i"
-	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcin/projects/ChatAppCpp2.0/Scripts/scriptsConnect.cpp > CMakeFiles/test_0.dir/Scripts/scriptsConnect.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/project/Scripts/scriptsConnect.cpp > CMakeFiles/test_0.dir/Scripts/scriptsConnect.cpp.i
 
 CMakeFiles/test_0.dir/Scripts/scriptsConnect.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_0.dir/Scripts/scriptsConnect.cpp.s"
-	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcin/projects/ChatAppCpp2.0/Scripts/scriptsConnect.cpp -o CMakeFiles/test_0.dir/Scripts/scriptsConnect.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/project/Scripts/scriptsConnect.cpp -o CMakeFiles/test_0.dir/Scripts/scriptsConnect.cpp.s
 
 CMakeFiles/test_0.dir/Scripts/scriptsUser.cpp.o: CMakeFiles/test_0.dir/flags.make
 CMakeFiles/test_0.dir/Scripts/scriptsUser.cpp.o: ../Scripts/scriptsUser.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcin/projects/ChatAppCpp2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/test_0.dir/Scripts/scriptsUser.cpp.o"
-	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_0.dir/Scripts/scriptsUser.cpp.o -c /home/marcin/projects/ChatAppCpp2.0/Scripts/scriptsUser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/test_0.dir/Scripts/scriptsUser.cpp.o"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_0.dir/Scripts/scriptsUser.cpp.o -c /root/project/Scripts/scriptsUser.cpp
 
 CMakeFiles/test_0.dir/Scripts/scriptsUser.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_0.dir/Scripts/scriptsUser.cpp.i"
-	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcin/projects/ChatAppCpp2.0/Scripts/scriptsUser.cpp > CMakeFiles/test_0.dir/Scripts/scriptsUser.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/project/Scripts/scriptsUser.cpp > CMakeFiles/test_0.dir/Scripts/scriptsUser.cpp.i
 
 CMakeFiles/test_0.dir/Scripts/scriptsUser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_0.dir/Scripts/scriptsUser.cpp.s"
-	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcin/projects/ChatAppCpp2.0/Scripts/scriptsUser.cpp -o CMakeFiles/test_0.dir/Scripts/scriptsUser.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/project/Scripts/scriptsUser.cpp -o CMakeFiles/test_0.dir/Scripts/scriptsUser.cpp.s
 
 CMakeFiles/test_0.dir/main.cpp.o: CMakeFiles/test_0.dir/flags.make
 CMakeFiles/test_0.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcin/projects/ChatAppCpp2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/test_0.dir/main.cpp.o"
-	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_0.dir/main.cpp.o -c /home/marcin/projects/ChatAppCpp2.0/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/test_0.dir/main.cpp.o"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_0.dir/main.cpp.o -c /root/project/main.cpp
 
 CMakeFiles/test_0.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_0.dir/main.cpp.i"
-	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcin/projects/ChatAppCpp2.0/main.cpp > CMakeFiles/test_0.dir/main.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/project/main.cpp > CMakeFiles/test_0.dir/main.cpp.i
 
 CMakeFiles/test_0.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_0.dir/main.cpp.s"
-	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcin/projects/ChatAppCpp2.0/main.cpp -o CMakeFiles/test_0.dir/main.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/project/main.cpp -o CMakeFiles/test_0.dir/main.cpp.s
 
 # Object files for target test_0
 test_0_OBJECTS = \
@@ -111,7 +111,7 @@ test_0: CMakeFiles/test_0.dir/main.cpp.o
 test_0: CMakeFiles/test_0.dir/build.make
 test_0: /usr/lib/x86_64-linux-gnu/libcurl.so
 test_0: CMakeFiles/test_0.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/marcin/projects/ChatAppCpp2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable test_0"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable test_0"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_0.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -124,6 +124,6 @@ CMakeFiles/test_0.dir/clean:
 .PHONY : CMakeFiles/test_0.dir/clean
 
 CMakeFiles/test_0.dir/depend:
-	cd /home/marcin/projects/ChatAppCpp2.0/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/marcin/projects/ChatAppCpp2.0 /home/marcin/projects/ChatAppCpp2.0 /home/marcin/projects/ChatAppCpp2.0/build /home/marcin/projects/ChatAppCpp2.0/build /home/marcin/projects/ChatAppCpp2.0/build/CMakeFiles/test_0.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/project/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/project /root/project /root/project/build /root/project/build /root/project/build/CMakeFiles/test_0.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/test_0.dir/depend
 

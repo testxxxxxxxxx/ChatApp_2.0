@@ -1,17 +1,17 @@
 [
 {
-  "directory": "/home/marcin/projects/ChatAppCpp2.0/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9   -I/usr/include/mysql  -g   -o CMakeFiles/test_0.dir/Scripts/scriptsConnect.cpp.o -c /home/marcin/projects/ChatAppCpp2.0/Scripts/scriptsConnect.cpp",
-  "file": "/home/marcin/projects/ChatAppCpp2.0/Scripts/scriptsConnect.cpp"
+  "directory": "/root/project/build",
+  "command": "/usr/bin/g++   -I/usr/include/mysql  -g   -o CMakeFiles/test_0.dir/Scripts/scriptsConnect.cpp.o -c /root/project/Scripts/scriptsConnect.cpp",
+  "file": "/root/project/Scripts/scriptsConnect.cpp"
 },
 {
-  "directory": "/home/marcin/projects/ChatAppCpp2.0/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9   -I/usr/include/mysql  -g   -o CMakeFiles/test_0.dir/Scripts/scriptsUser.cpp.o -c /home/marcin/projects/ChatAppCpp2.0/Scripts/scriptsUser.cpp",
-  "file": "/home/marcin/projects/ChatAppCpp2.0/Scripts/scriptsUser.cpp"
+  "directory": "/root/project/build",
+  "command": "/usr/bin/g++   -I/usr/include/mysql  -g   -o CMakeFiles/test_0.dir/Scripts/scriptsUser.cpp.o -c /root/project/Scripts/scriptsUser.cpp",
+  "file": "/root/project/Scripts/scriptsUser.cpp"
 },
 {
-  "directory": "/home/marcin/projects/ChatAppCpp2.0/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9   -I/usr/include/mysql  -g   -o CMakeFiles/test_0.dir/main.cpp.o -c /home/marcin/projects/ChatAppCpp2.0/main.cpp",
-  "file": "/home/marcin/projects/ChatAppCpp2.0/main.cpp"
+  "directory": "/root/project/build",
+  "command": "/usr/bin/g++   -I/usr/include/mysql  -g   -o CMakeFiles/test_0.dir/main.cpp.o -c /root/project/main.cpp",
+  "file": "/root/project/main.cpp"
 }
 ]

@@ -185,8 +185,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "/home/marcin/projects/ChatAppCpp2.0/build",
-		"source" : "/home/marcin/projects/ChatAppCpp2.0"
+		"build" : "/root/project/build",
+		"source" : "/root/project"
 	},
 	"version" : 
 	{
