@@ -31,7 +31,7 @@ bool User::loginUser()
 
     Connect::selectDB(&conn,"chatAppCpp2");
 
-    string query="SELECT u.password FROM users AS u WHERE u.login='Test@example.com' AND u.password='Test'";
+    string query="SELECT u.password FROM users AS u WHERE u.login='"+Connect::escapeString(&conn,this->email.c_str())+"' AND u.password='"+Connect::escapeString(&conn,this->password.c_str())+"'";
 
     string *data=Connect::readData(&conn,query);
 
@@ -42,7 +42,16 @@ bool User::loginUser()
 }
 bool User::registerUser()
 {
+    MYSQL conn=Connect::connectDB("localhost","test","test");
 
+    Connect::selectDB(&conn,"chatAppCpp2");
+
+    string query="INSERT INTO users(login,password) VALUES('"+Connect::escapeString(&conn,this->email.c_str())+"','"+Connect::escapeString(&conn,this->password.c_str())+"')";
+
+    if(!Connect::execQuery(&conn,query) && this->checkIfLoginExists())
+        return false;
+
+    return true;
 }
 bool User::checkUserAuth()
 {
