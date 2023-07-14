@@ -1,8 +1,18 @@
 [
 {
   "directory": "/root/project/build",
+  "command": "/usr/bin/g++   -I/usr/include/mysql  -g   -o CMakeFiles/test_0.dir/Scripts/scriptsAuth.cpp.o -c /root/project/Scripts/scriptsAuth.cpp",
+  "file": "/root/project/Scripts/scriptsAuth.cpp"
+},
+{
+  "directory": "/root/project/build",
   "command": "/usr/bin/g++   -I/usr/include/mysql  -g   -o CMakeFiles/test_0.dir/Scripts/scriptsConnect.cpp.o -c /root/project/Scripts/scriptsConnect.cpp",
   "file": "/root/project/Scripts/scriptsConnect.cpp"
+},
+{
+  "directory": "/root/project/build",
+  "command": "/usr/bin/g++   -I/usr/include/mysql  -g   -o CMakeFiles/test_0.dir/Scripts/scriptsMessage.cpp.o -c /root/project/Scripts/scriptsMessage.cpp",
+  "file": "/root/project/Scripts/scriptsMessage.cpp"
 },
 {
   "directory": "/root/project/build",

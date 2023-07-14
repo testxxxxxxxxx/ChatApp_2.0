@@ -4,7 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/root/project/Scripts/scriptsAuth.cpp" "/root/project/build/CMakeFiles/test_0.dir/Scripts/scriptsAuth.cpp.o"
   "/root/project/Scripts/scriptsConnect.cpp" "/root/project/build/CMakeFiles/test_0.dir/Scripts/scriptsConnect.cpp.o"
+  "/root/project/Scripts/scriptsMessage.cpp" "/root/project/build/CMakeFiles/test_0.dir/Scripts/scriptsMessage.cpp.o"
   "/root/project/Scripts/scriptsUser.cpp" "/root/project/build/CMakeFiles/test_0.dir/Scripts/scriptsUser.cpp.o"
   "/root/project/main.cpp" "/root/project/build/CMakeFiles/test_0.dir/main.cpp.o"
   )

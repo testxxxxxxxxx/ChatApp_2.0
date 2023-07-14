@@ -4,22 +4,23 @@
 
 using namespace std;
 
+#pragma once
+
 #define userVar 1
 
-namespace AuthSystem
+namespace UserGetter
 {
     class User
     {
-        string email;
-        string password;
-        bool isLogin=false;
+        int id;
+        string email,password;
 
         public:
 
-            User(string e,string p) : email(e),password(p)
+            User(string email,string password) : email(email),password(password)
             {
-                this->email=e;
-                this->password=p;
+                this->email=email;
+                this->password=password;
 
             }
             virtual ~User()=default;
@@ -28,13 +29,9 @@ namespace AuthSystem
 
             void operator()(int o);
 
-            bool loginUser();
-            bool registerUser();
-            bool checkUserAuth();
-
-        private:
-
-            bool checkIfLoginExists();
+            int getId();
+            string getEmail();
+            string getPassword();
 
     };
 

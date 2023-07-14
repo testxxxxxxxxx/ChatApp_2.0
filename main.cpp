@@ -1,16 +1,17 @@
 #include <iostream>
 #include "Classes/Connect.hpp"
+#include "Classes/Auth.hpp"
 #include "Classes/User.hpp"
 
 using namespace std;
-using namespace ConnectForDatabase;
 using namespace AuthSystem;
+using namespace UserGetter;
 
 int main(int agrc,char *agrv[])
 {
-    User *u=new User("Test@example.com","Test");
+    Auth *a=new Auth((new User("Test@example.pl","Password")));
 
-    cout<<u->loginUser()<<endl;
+    cout<<a->loginUser()<<endl;
 
     return 0;
 }

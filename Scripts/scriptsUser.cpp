@@ -1,10 +1,10 @@
 #include <iostream>
-#include "../Classes/Connect.hpp"
 #include "../Classes/User.hpp"
+#include "../Classes/Connect.hpp"
 
 using namespace std;
+using namespace UserGetter;
 using namespace ConnectForDatabase;
-using namespace AuthSystem;
 
 User User::operator=(const User &u)
 {
@@ -25,54 +25,30 @@ void User::operator()(int o)
     };
 
 }
-bool User::loginUser()
+int User::getId()
 {
     MYSQL conn=Connect::connectDB("localhost","test","test");
 
     Connect::selectDB(&conn,"chatAppCpp2");
 
-    string query="SELECT u.password FROM users AS u WHERE u.login='"+Connect::escapeString(&conn,this->email.c_str())+"' AND u.password='"+Connect::escapeString(&conn,this->password.c_str())+"'";
+    string query="SELECT u.id FROM users AS u WHERE u.login='"+Connect::escapeString(&conn,this->email.c_str())+"'";
 
-    string *data=Connect::readData(&conn,query);
+    string *idH=Connect::readData(&conn,query);
+    string idS=*idH;
 
-    if(Connect::readData(&conn,query)!=nullptr)
-        return true;
-       
-    return false;
+    string::size_type sz;
+
+    int id=stoi(idS,&sz);
+
+    return id;
 }
-bool User::registerUser()
-{
-    MYSQL conn=Connect::connectDB("localhost","test","test");
-
-    Connect::selectDB(&conn,"chatAppCpp2");
-
-    string query="INSERT INTO users(login,password) VALUES('"+Connect::escapeString(&conn,this->email.c_str())+"','"+Connect::escapeString(&conn,this->password.c_str())+"')";
-
-    if(!Connect::execQuery(&conn,query) && this->checkIfLoginExists())
-        return false;
-
-    return true;
-}
-bool User::checkUserAuth()
+string User::getEmail()
 {
 
+    return this->email;
 }
-bool User::checkIfLoginExists()
+string User::getPassword()
 {
-    MYSQL conn=Connect::connectDB("localhost","test","test");
 
-    Connect::selectDB(&conn,"users");
-
-    string *emails;
-
-    emails=Connect::readData(&conn,"SELECT u.login FROM user AS u");
-
-    for(int i=0;i<100;i++)
-    {
-        if(this->email==emails[i])
-            return true;
-
-    }
-
-    return false;
+    return this->password;
 }

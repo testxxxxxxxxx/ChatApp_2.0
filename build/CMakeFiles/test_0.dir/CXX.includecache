@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/root/project/Classes/Auth.hpp
+iostream
+-
+User.hpp
+/root/project/Classes/User.hpp
+
+/root/project/Classes/Connect.hpp
+iostream
+-
+mysql/mysql.h
+-
+
+/root/project/Classes/User.hpp
+iostream
+-
+
+/root/project/Scripts/scriptsAuth.cpp
+iostream
+-
+../Classes/Connect.hpp
+/root/project/Classes/Connect.hpp
+../Classes/Auth.hpp
+/root/project/Classes/Auth.hpp
+../Classes/User.hpp
+/root/project/Classes/User.hpp
+

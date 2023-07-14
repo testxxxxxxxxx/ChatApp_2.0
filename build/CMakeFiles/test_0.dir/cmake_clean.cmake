@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/test_0.dir/Scripts/scriptsAuth.cpp.o"
   "CMakeFiles/test_0.dir/Scripts/scriptsConnect.cpp.o"
+  "CMakeFiles/test_0.dir/Scripts/scriptsMessage.cpp.o"
   "CMakeFiles/test_0.dir/Scripts/scriptsUser.cpp.o"
   "CMakeFiles/test_0.dir/main.cpp.o"
   "test_0"

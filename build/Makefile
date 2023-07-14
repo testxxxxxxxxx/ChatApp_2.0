@@ -169,6 +169,33 @@ test_0/fast:
 	$(MAKE) -f CMakeFiles/test_0.dir/build.make CMakeFiles/test_0.dir/build
 .PHONY : test_0/fast
 
+Scripts/scriptsAuth.o: Scripts/scriptsAuth.cpp.o
+
+.PHONY : Scripts/scriptsAuth.o
+
+# target to build an object file
+Scripts/scriptsAuth.cpp.o:
+	$(MAKE) -f CMakeFiles/test_0.dir/build.make CMakeFiles/test_0.dir/Scripts/scriptsAuth.cpp.o
+.PHONY : Scripts/scriptsAuth.cpp.o
+
+Scripts/scriptsAuth.i: Scripts/scriptsAuth.cpp.i
+
+.PHONY : Scripts/scriptsAuth.i
+
+# target to preprocess a source file
+Scripts/scriptsAuth.cpp.i:
+	$(MAKE) -f CMakeFiles/test_0.dir/build.make CMakeFiles/test_0.dir/Scripts/scriptsAuth.cpp.i
+.PHONY : Scripts/scriptsAuth.cpp.i
+
+Scripts/scriptsAuth.s: Scripts/scriptsAuth.cpp.s
+
+.PHONY : Scripts/scriptsAuth.s
+
+# target to generate assembly for a file
+Scripts/scriptsAuth.cpp.s:
+	$(MAKE) -f CMakeFiles/test_0.dir/build.make CMakeFiles/test_0.dir/Scripts/scriptsAuth.cpp.s
+.PHONY : Scripts/scriptsAuth.cpp.s
+
 Scripts/scriptsConnect.o: Scripts/scriptsConnect.cpp.o
 
 .PHONY : Scripts/scriptsConnect.o
@@ -195,6 +222,33 @@ Scripts/scriptsConnect.s: Scripts/scriptsConnect.cpp.s
 Scripts/scriptsConnect.cpp.s:
 	$(MAKE) -f CMakeFiles/test_0.dir/build.make CMakeFiles/test_0.dir/Scripts/scriptsConnect.cpp.s
 .PHONY : Scripts/scriptsConnect.cpp.s
+
+Scripts/scriptsMessage.o: Scripts/scriptsMessage.cpp.o
+
+.PHONY : Scripts/scriptsMessage.o
+
+# target to build an object file
+Scripts/scriptsMessage.cpp.o:
+	$(MAKE) -f CMakeFiles/test_0.dir/build.make CMakeFiles/test_0.dir/Scripts/scriptsMessage.cpp.o
+.PHONY : Scripts/scriptsMessage.cpp.o
+
+Scripts/scriptsMessage.i: Scripts/scriptsMessage.cpp.i
+
+.PHONY : Scripts/scriptsMessage.i
+
+# target to preprocess a source file
+Scripts/scriptsMessage.cpp.i:
+	$(MAKE) -f CMakeFiles/test_0.dir/build.make CMakeFiles/test_0.dir/Scripts/scriptsMessage.cpp.i
+.PHONY : Scripts/scriptsMessage.cpp.i
+
+Scripts/scriptsMessage.s: Scripts/scriptsMessage.cpp.s
+
+.PHONY : Scripts/scriptsMessage.s
+
+# target to generate assembly for a file
+Scripts/scriptsMessage.cpp.s:
+	$(MAKE) -f CMakeFiles/test_0.dir/build.make CMakeFiles/test_0.dir/Scripts/scriptsMessage.cpp.s
+.PHONY : Scripts/scriptsMessage.cpp.s
 
 Scripts/scriptsUser.o: Scripts/scriptsUser.cpp.o
 
@@ -263,9 +317,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test_0"
+	@echo "... Scripts/scriptsAuth.o"
+	@echo "... Scripts/scriptsAuth.i"
+	@echo "... Scripts/scriptsAuth.s"
 	@echo "... Scripts/scriptsConnect.o"
 	@echo "... Scripts/scriptsConnect.i"
 	@echo "... Scripts/scriptsConnect.s"
+	@echo "... Scripts/scriptsMessage.o"
+	@echo "... Scripts/scriptsMessage.i"
+	@echo "... Scripts/scriptsMessage.s"
 	@echo "... Scripts/scriptsUser.o"
 	@echo "... Scripts/scriptsUser.i"
 	@echo "... Scripts/scriptsUser.s"
