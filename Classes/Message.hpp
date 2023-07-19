@@ -15,14 +15,15 @@ namespace MessageSystem
     class Message
     {
         int id,from,to;
+        User *user;
         string content;
 
         public:
 
-            Message(int id,int from,int to,string content) : id(id),from(from),to(to),content(content)
+            Message(int id,User *user,int to,string content) : id(id),user(user),to(to),content(content)
             {
                 this->id=id;
-                this->from=from;
+                this->from=user->getId();
                 this->to=to;
                 this->content=content;
 
