@@ -26,9 +26,9 @@ MYSQL Connect::connectDB(const char *host0,const char *user0,const char *passwor
 
     return *conn;
 }
-void Connect::selectDB(MYSQL *conn,const char *table)
+void Connect::selectDB(MYSQL *conn,const char *database)
 {
-    if(mysql_select_db(conn,table)<0)
+    if(mysql_select_db(conn,database)<0)
         throw mysql_errno(conn);
 
     return;

@@ -50,7 +50,9 @@ bool Auth::registerUser()
 
     string query="INSERT INTO users(login,password) VALUES('"+Connect::escapeString(&conn,this->u->getEmail().c_str())+"','"+Connect::escapeString(&conn,this->u->getPassword().c_str())+"')";
 
-    if(!Connect::execQuery(&conn,query) && this->checkIfLoginExists())
+    bool isRegistered=Connect::execQuery(&conn,query) && this->checkIfLoginExists() && this->u->getPassword()!="";
+
+    if(!isRegistered)
         return false;
 
     return true;
@@ -66,7 +68,7 @@ bool Auth::checkIfLoginExists()
 {
     MYSQL conn=Connect::connectDB("localhost","test","test");
 
-    Connect::selectDB(&conn,"users");
+    Connect::selectDB(&conn,"chatAppCpp2");
 
     string *emails;
 

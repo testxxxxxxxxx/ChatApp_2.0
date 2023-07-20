@@ -17,7 +17,7 @@ namespace UserGetter
 
         public:
 
-            User(string email,string password) : email(email),password(password)
+            User(string email,string password="") : email(email),password(password)
             {
                 this->email=email;
                 this->password=password;
