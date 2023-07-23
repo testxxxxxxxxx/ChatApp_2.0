@@ -35,7 +35,7 @@ namespace MessageSystem
             void operator()(int o);
 
             bool createMessage(User *to);
-            string getMessage();
+            string *getMessage();
 
     };
 

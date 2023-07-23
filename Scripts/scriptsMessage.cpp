@@ -41,7 +41,15 @@ bool Message::createMessage(User *to)
     return true;
 
 }
-string Message::getMessage()
+string *Message::getMessage()
 {
+    MYSQL conn=Connect::connectDB("localhost","test","test");
 
+    Connect::selectDB(&conn,"chatAppCpp2");
+
+    string query="SELECT m.from,m.to,m.content FROM messages AS m WHERE m.to="+this->user->getId();
+
+    string *data = Connect::readData(&conn,query);
+
+    return data;
 }
