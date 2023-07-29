@@ -27,7 +27,7 @@ void User::operator()(int o)
 }
 int User::getId()
 {
-    MYSQL conn=Connect::connectDB("localhost","test","test");
+    MYSQL conn=Connect::connectDB("localhost","root","root");
 
     Connect::selectDB(&conn,"chatAppCpp2");
 

@@ -29,7 +29,7 @@ void Message::operator()(int o)
 }
 bool Message::createMessage(User *to)
 {
-    MYSQL conn=Connect::connectDB("localhost","test","test");
+    MYSQL conn=Connect::connectDB("localhost","root","root");
 
     Connect::selectDB(&conn,"chatAppCpp2");
 
@@ -43,11 +43,11 @@ bool Message::createMessage(User *to)
 }
 string *Message::getMessage()
 {
-    MYSQL conn=Connect::connectDB("localhost","test","test");
+    MYSQL conn=Connect::connectDB("localhost","root","root");
 
     Connect::selectDB(&conn,"chatAppCpp2");
 
-    string query="SELECT m.from,m.to,m.content FROM messages AS m WHERE m.to="+this->user->getId();
+    string query="SELECT m.from,m.to,m.content FROM messages AS m WHERE m.to="+Connect::escapeString(&conn,(const char *)this->user->getId());
 
     string *data = Connect::readData(&conn,query);
 

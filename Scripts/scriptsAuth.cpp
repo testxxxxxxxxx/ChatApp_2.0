@@ -29,7 +29,7 @@ void Auth::operator()(int o)
 }
 bool Auth::loginUser()
 {
-    MYSQL conn=Connect::connectDB("localhost","test","test");
+    MYSQL conn=Connect::connectDB("localhost","root","root");
 
     Connect::selectDB(&conn,"chatAppCpp2");
 
@@ -44,7 +44,7 @@ bool Auth::loginUser()
 }
 bool Auth::registerUser()
 {
-    MYSQL conn=Connect::connectDB("localhost","test","test");
+    MYSQL conn=Connect::connectDB("localhost","root","root");
 
     Connect::selectDB(&conn,"chatAppCpp2");
 
@@ -66,7 +66,7 @@ bool Auth::checkUserAuth()
 }
 bool Auth::checkIfLoginExists()
 {
-    MYSQL conn=Connect::connectDB("localhost","test","test");
+    MYSQL conn=Connect::connectDB("localhost","root","root");
 
     Connect::selectDB(&conn,"chatAppCpp2");
 
