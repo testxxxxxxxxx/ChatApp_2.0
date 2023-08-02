@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/test_0.dir/Config/dbConfig.cpp.o"
   "CMakeFiles/test_0.dir/Scripts/scriptsAuth.cpp.o"
   "CMakeFiles/test_0.dir/Scripts/scriptsConnect.cpp.o"
   "CMakeFiles/test_0.dir/Scripts/scriptsMessage.cpp.o"

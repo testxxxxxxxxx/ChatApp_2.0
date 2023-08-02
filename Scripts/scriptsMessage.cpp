@@ -2,11 +2,13 @@
 #include "../Classes/Message.hpp"
 #include "../Classes/User.hpp"
 #include "../Classes/Connect.hpp"
+#include "../Config/DbConfig.cpp"
 
 using namespace std;
 using namespace MessageSystem;
 using namespace UserGetter;
 using namespace ConnectForDatabase;
+using namespace DbConfig;
 
 Message Message::operator=(const Message &m)
 {
@@ -29,9 +31,9 @@ void Message::operator()(int o)
 }
 bool Message::createMessage(User *to)
 {
-    MYSQL conn=Connect::connectDB("localhost","root","root");
+    MYSQL conn=Connect::connectDB(dbConfig["host"].c_str(),dbConfig["user"].c_str(),dbConfig["password"].c_str());
 
-    Connect::selectDB(&conn,"chatAppCpp2");
+    Connect::selectDB(&conn,dbConfig["database"].c_str());
 
     string query="INSERT INTO messages(from,to,content) VALUES('"+Connect::escapeString(&conn,(const char *)this->user->getId())+"',"+Connect::escapeString(&conn,(const char *)to->getId())+"',"+Connect::escapeString(&conn,this->content.c_str())+"')";
 
@@ -43,9 +45,9 @@ bool Message::createMessage(User *to)
 }
 string *Message::getMessage()
 {
-    MYSQL conn=Connect::connectDB("localhost","root","root");
+    MYSQL conn=Connect::connectDB(dbConfig["host"].c_str(),dbConfig["user"].c_str(),dbConfig["password"].c_str());
 
-    Connect::selectDB(&conn,"chatAppCpp2");
+    Connect::selectDB(&conn,dbConfig["database"].c_str());
 
     string query="SELECT m.from,m.to,m.content FROM messages AS m WHERE m.to="+Connect::escapeString(&conn,(const char *)this->user->getId());
 

@@ -2,11 +2,13 @@
 #include "../Classes/Connect.hpp"
 #include "../Classes/Auth.hpp"
 #include "../Classes/User.hpp"
+#include "../Config/DbConfig.cpp"
 
 using namespace std;
 using namespace ConnectForDatabase;
 using namespace AuthSystem;
 using namespace UserGetter;
+using namespace DbConfig;
 
 Auth Auth::operator=(const Auth &a)
 {
@@ -29,9 +31,9 @@ void Auth::operator()(int o)
 }
 bool Auth::loginUser()
 {
-    MYSQL conn=Connect::connectDB("localhost","root","root");
+    MYSQL conn=Connect::connectDB(dbConfig["host"].c_str(),dbConfig["user"].c_str(),dbConfig["password"].c_str());
 
-    Connect::selectDB(&conn,"chatAppCpp2");
+    Connect::selectDB(&conn,dbConfig["database"].c_str());
 
     string query="SELECT u.password FROM users AS u WHERE u.login='"+Connect::escapeString(&conn,this->u->getEmail().c_str())+"' AND u.password='"+Connect::escapeString(&conn,this->u->getPassword().c_str())+"'";
 
@@ -44,9 +46,9 @@ bool Auth::loginUser()
 }
 bool Auth::registerUser()
 {
-    MYSQL conn=Connect::connectDB("localhost","root","root");
+    MYSQL conn=Connect::connectDB(dbConfig["host"].c_str(),dbConfig["user"].c_str(),dbConfig["password"].c_str());
 
-    Connect::selectDB(&conn,"chatAppCpp2");
+    Connect::selectDB(&conn,dbConfig["database"].c_str());
 
     string query="INSERT INTO users(login,password) VALUES('"+Connect::escapeString(&conn,this->u->getEmail().c_str())+"','"+Connect::escapeString(&conn,this->u->getPassword().c_str())+"')";
 
@@ -66,9 +68,9 @@ bool Auth::checkUserAuth()
 }
 bool Auth::checkIfLoginExists()
 {
-    MYSQL conn=Connect::connectDB("localhost","root","root");
+    MYSQL conn=Connect::connectDB(dbConfig["host"].c_str(),dbConfig["user"].c_str(),dbConfig["password"].c_str());
 
-    Connect::selectDB(&conn,"chatAppCpp2");
+    Connect::selectDB(&conn,dbConfig["database"].c_str());
 
     string *emails;
 

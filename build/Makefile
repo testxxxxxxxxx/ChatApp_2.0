@@ -169,6 +169,33 @@ test_0/fast:
 	$(MAKE) -f CMakeFiles/test_0.dir/build.make CMakeFiles/test_0.dir/build
 .PHONY : test_0/fast
 
+Config/dbConfig.o: Config/dbConfig.cpp.o
+
+.PHONY : Config/dbConfig.o
+
+# target to build an object file
+Config/dbConfig.cpp.o:
+	$(MAKE) -f CMakeFiles/test_0.dir/build.make CMakeFiles/test_0.dir/Config/dbConfig.cpp.o
+.PHONY : Config/dbConfig.cpp.o
+
+Config/dbConfig.i: Config/dbConfig.cpp.i
+
+.PHONY : Config/dbConfig.i
+
+# target to preprocess a source file
+Config/dbConfig.cpp.i:
+	$(MAKE) -f CMakeFiles/test_0.dir/build.make CMakeFiles/test_0.dir/Config/dbConfig.cpp.i
+.PHONY : Config/dbConfig.cpp.i
+
+Config/dbConfig.s: Config/dbConfig.cpp.s
+
+.PHONY : Config/dbConfig.s
+
+# target to generate assembly for a file
+Config/dbConfig.cpp.s:
+	$(MAKE) -f CMakeFiles/test_0.dir/build.make CMakeFiles/test_0.dir/Config/dbConfig.cpp.s
+.PHONY : Config/dbConfig.cpp.s
+
 Scripts/scriptsAuth.o: Scripts/scriptsAuth.cpp.o
 
 .PHONY : Scripts/scriptsAuth.o
@@ -317,6 +344,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test_0"
+	@echo "... Config/dbConfig.o"
+	@echo "... Config/dbConfig.i"
+	@echo "... Config/dbConfig.s"
 	@echo "... Scripts/scriptsAuth.o"
 	@echo "... Scripts/scriptsAuth.i"
 	@echo "... Scripts/scriptsAuth.s"
