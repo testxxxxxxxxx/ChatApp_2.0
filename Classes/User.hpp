@@ -25,7 +25,7 @@ namespace UserGetter
             }
             virtual ~User()=default;
 
-            User operator=(const User &u);
+            User operator=(const User &u) const;
 
             void operator()(int o);
 

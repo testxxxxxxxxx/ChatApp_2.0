@@ -30,7 +30,7 @@ namespace MessageSystem
             }
             virtual ~Message()=default;
 
-            Message operator=(const Message &m);
+            Message operator=(const Message &m) const;
 
             void operator()(int o);
 

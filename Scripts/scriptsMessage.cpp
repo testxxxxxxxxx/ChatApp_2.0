@@ -2,7 +2,7 @@
 #include "../Classes/Message.hpp"
 #include "../Classes/User.hpp"
 #include "../Classes/Connect.hpp"
-#include "../Config/DbConfig.cpp"
+#include "../Config/DbConfig.hpp"
 
 using namespace std;
 using namespace MessageSystem;
@@ -10,7 +10,7 @@ using namespace UserGetter;
 using namespace ConnectForDatabase;
 using namespace DbConfig;
 
-Message Message::operator=(const Message &m)
+Message Message::operator=(const Message &m) const
 {
 
     return Message(0,(new User("","")),0,"");

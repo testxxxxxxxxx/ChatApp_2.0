@@ -24,7 +24,7 @@ namespace AuthSystem
             }
             virtual ~Auth()=default;
 
-            Auth operator=(const Auth &u);
+            Auth operator=(const Auth &u) const;
 
             void operator()(int o);
 

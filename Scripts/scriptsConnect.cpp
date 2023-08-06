@@ -10,7 +10,7 @@ extern char Connect::*user;
 extern char Connect::*password;
 extern string Connect::data[100];
 
-Connect Connect::operator=(const Connect &c)
+Connect Connect::operator=(const Connect &c) const
 {
 
     return Connect();

@@ -6,12 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/root/project/Classes/Auth.hpp
-iostream
--
-User.hpp
-/root/project/Classes/User.hpp
-
 /root/project/Classes/Connect.hpp
 iostream
 -
@@ -28,22 +22,10 @@ User.hpp
 iostream
 -
 
-/root/project/Scripts/scriptsAuth.cpp
+/root/project/Config/DbConfig.hpp
 iostream
 -
-../Classes/Connect.hpp
-/root/project/Classes/Connect.hpp
-../Classes/Auth.hpp
-/root/project/Classes/Auth.hpp
-../Classes/User.hpp
-/root/project/Classes/User.hpp
-
-/root/project/Scripts/scriptsConnect.cpp
-iostream
--
-../Classes/Connect.hpp
-/root/project/Classes/Connect.hpp
-mysql/mysql.h
+map
 -
 
 /root/project/Scripts/scriptsMessage.cpp
@@ -55,22 +37,6 @@ iostream
 /root/project/Classes/User.hpp
 ../Classes/Connect.hpp
 /root/project/Classes/Connect.hpp
-
-/root/project/Scripts/scriptsUser.cpp
-iostream
--
-../Classes/User.hpp
-/root/project/Classes/User.hpp
-../Classes/Connect.hpp
-/root/project/Classes/Connect.hpp
-
-/root/project/main.cpp
-iostream
--
-Classes/Connect.hpp
-/root/project/Classes/Connect.hpp
-Classes/Auth.hpp
-/root/project/Classes/Auth.hpp
-Classes/User.hpp
-/root/project/Classes/User.hpp
+../Config/DbConfig.hpp
+/root/project/Config/DbConfig.hpp
 

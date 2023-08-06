@@ -25,7 +25,7 @@ namespace ConnectForDatabase
             }
             virtual ~Connect()=default;
 
-            Connect operator=(const Connect &c);
+            Connect operator=(const Connect &c) const;
 
             static MYSQL connectDB(const char *host0,const char *user0,const char *password0);
             static void selectDB(MYSQL *conn,const char *database);

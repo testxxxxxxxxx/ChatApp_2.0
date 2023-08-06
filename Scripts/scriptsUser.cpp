@@ -6,7 +6,7 @@ using namespace std;
 using namespace UserGetter;
 using namespace ConnectForDatabase;
 
-User User::operator=(const User &u)
+User User::operator=(const User &u) const
 {
 
     return User(this->email,this->password);

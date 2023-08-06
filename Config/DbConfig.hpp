@@ -1,7 +1,13 @@
+#ifndef dbConfigVar
+
 #include <iostream>
 #include <map>
 
 using namespace std;
+
+#define dbConfigVar 1
+
+#pragma once
 
 namespace DbConfig
 {
@@ -13,3 +19,5 @@ namespace DbConfig
     };
 
 };
+
+#endif

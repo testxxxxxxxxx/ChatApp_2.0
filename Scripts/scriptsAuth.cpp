@@ -2,7 +2,7 @@
 #include "../Classes/Connect.hpp"
 #include "../Classes/Auth.hpp"
 #include "../Classes/User.hpp"
-#include "../Config/DbConfig.cpp"
+#include "../Config/DbConfig.hpp"
 
 using namespace std;
 using namespace ConnectForDatabase;
@@ -10,7 +10,7 @@ using namespace AuthSystem;
 using namespace UserGetter;
 using namespace DbConfig;
 
-Auth Auth::operator=(const Auth &a)
+Auth Auth::operator=(const Auth &a) const
 {
 
     return Auth((new User("","")));

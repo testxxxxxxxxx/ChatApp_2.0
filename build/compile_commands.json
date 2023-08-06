@@ -1,11 +1,6 @@
 [
 {
   "directory": "/root/project/build",
-  "command": "/usr/bin/g++   -I/usr/include/mysql  -g   -o CMakeFiles/test_0.dir/Config/dbConfig.cpp.o -c /root/project/Config/dbConfig.cpp",
-  "file": "/root/project/Config/dbConfig.cpp"
-},
-{
-  "directory": "/root/project/build",
   "command": "/usr/bin/g++   -I/usr/include/mysql  -g   -o CMakeFiles/test_0.dir/Scripts/scriptsAuth.cpp.o -c /root/project/Scripts/scriptsAuth.cpp",
   "file": "/root/project/Scripts/scriptsAuth.cpp"
 },
@@ -13,6 +8,11 @@
   "directory": "/root/project/build",
   "command": "/usr/bin/g++   -I/usr/include/mysql  -g   -o CMakeFiles/test_0.dir/Scripts/scriptsConnect.cpp.o -c /root/project/Scripts/scriptsConnect.cpp",
   "file": "/root/project/Scripts/scriptsConnect.cpp"
+},
+{
+  "directory": "/root/project/build",
+  "command": "/usr/bin/g++   -I/usr/include/mysql  -g   -o CMakeFiles/test_0.dir/Scripts/scriptsHash.cpp.o -c /root/project/Scripts/scriptsHash.cpp",
+  "file": "/root/project/Scripts/scriptsHash.cpp"
 },
 {
   "directory": "/root/project/build",

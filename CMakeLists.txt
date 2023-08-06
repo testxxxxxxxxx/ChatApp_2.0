@@ -7,7 +7,7 @@ file(GLOB MAIN_APP_SRC
     "*.hpp"
     "*.cpp"
     "Scripts/*.cpp"
-    "Config/*.cpp"
+    "Config/*.hpp"
 
 )
 

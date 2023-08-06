@@ -55,9 +55,10 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/src" TYPE FILE FILES
-    "/root/project/Config/dbConfig.cpp"
+    "/root/project/Config/DbConfig.hpp"
     "/root/project/Scripts/scriptsAuth.cpp"
     "/root/project/Scripts/scriptsConnect.cpp"
+    "/root/project/Scripts/scriptsHash.cpp"
     "/root/project/Scripts/scriptsMessage.cpp"
     "/root/project/Scripts/scriptsUser.cpp"
     "/root/project/main.cpp"
