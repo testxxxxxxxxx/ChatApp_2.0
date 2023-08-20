@@ -33,12 +33,12 @@ int User::getId()
 
     string query="SELECT u.id FROM users AS u WHERE u.login='"+Connect::escapeString(&conn,this->email.c_str())+"'";
 
-    string *idH=Connect::readData(&conn,query);
-    string idS=*idH;
+    string *idH = Connect::readData(&conn,query);
+    string idS = *idH;
 
     string::size_type sz;
 
-    int id=stoi(idS,&sz);
+    int id = stoi(idS,&sz);
 
     return id;
 }

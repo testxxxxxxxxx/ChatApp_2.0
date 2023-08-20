@@ -31,13 +31,13 @@ void Auth::operator()(int o)
 }
 bool Auth::loginUser()
 {
-    MYSQL conn=Connect::connectDB(dbConfig["host"].c_str(),dbConfig["user"].c_str(),dbConfig["password"].c_str());
+    MYSQL conn = Connect::connectDB(dbConfig["host"].c_str(),dbConfig["user"].c_str(),dbConfig["password"].c_str());
 
     Connect::selectDB(&conn,dbConfig["database"].c_str());
 
-    string query="SELECT u.password FROM users AS u WHERE u.login='"+Connect::escapeString(&conn,this->u->getEmail().c_str())+"' AND u.password='"+Connect::escapeString(&conn,this->u->getPassword().c_str())+"'";
+    string query = "SELECT u.password FROM users AS u WHERE u.login='"+Connect::escapeString(&conn,this->u->getEmail().c_str())+"' AND u.password='"+Connect::escapeString(&conn,this->u->getPassword().c_str())+"'";
 
-    string *data=Connect::readData(&conn,query);
+    string *data = Connect::readData(&conn,query);
 
     if(Connect::readData(&conn,query)!=nullptr)
         return true;
@@ -46,13 +46,13 @@ bool Auth::loginUser()
 }
 bool Auth::registerUser()
 {
-    MYSQL conn=Connect::connectDB(dbConfig["host"].c_str(),dbConfig["user"].c_str(),dbConfig["password"].c_str());
+    MYSQL conn = Connect::connectDB(dbConfig["host"].c_str(),dbConfig["user"].c_str(),dbConfig["password"].c_str());
 
     Connect::selectDB(&conn,dbConfig["database"].c_str());
 
-    string query="INSERT INTO users(login,password) VALUES('"+Connect::escapeString(&conn,this->u->getEmail().c_str())+"','"+Connect::escapeString(&conn,this->u->getPassword().c_str())+"')";
+    string query = "INSERT INTO users(login,password) VALUES('"+Connect::escapeString(&conn,this->u->getEmail().c_str())+"','"+Connect::escapeString(&conn,this->u->getPassword().c_str())+"')";
 
-    bool isRegistered=Connect::execQuery(&conn,query) && this->checkIfLoginExists() && this->u->getPassword()!="";
+    bool isRegistered = Connect::execQuery(&conn,query) && this->checkIfLoginExists() && this->u->getPassword()!="";
 
     if(!isRegistered)
         return false;
@@ -68,17 +68,17 @@ bool Auth::checkUserAuth()
 }
 bool Auth::checkIfLoginExists()
 {
-    MYSQL conn=Connect::connectDB(dbConfig["host"].c_str(),dbConfig["user"].c_str(),dbConfig["password"].c_str());
+    MYSQL conn = Connect::connectDB(dbConfig["host"].c_str(),dbConfig["user"].c_str(),dbConfig["password"].c_str());
 
     Connect::selectDB(&conn,dbConfig["database"].c_str());
 
     string *emails;
 
-    emails=Connect::readData(&conn,"SELECT u.login FROM users AS u");
+    emails = Connect::readData(&conn,"SELECT u.login FROM users AS u");
 
     for(int i=0;i<100;i++)
     {
-        if(this->u->getEmail()==emails[i])
+        if(this->u->getEmail() == emails[i])
             return true;
 
     }

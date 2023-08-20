@@ -22,13 +22,13 @@ namespace MessageSystem
 
             Message(int id,User *user,int to,string content) : id(id),user(user),to(to),content(content)
             {
-                this->id=id;
-                this->from=user->getId();
-                this->to=to;
-                this->content=content;
+                this->id = id;
+                this->from = user->getId();
+                this->to = to;
+                this->content = content;
 
             }
-            virtual ~Message()=default;
+            virtual ~Message() = default;
 
             Message operator=(const Message &m) const;
 
