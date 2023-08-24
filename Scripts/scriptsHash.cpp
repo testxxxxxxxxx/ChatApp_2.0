@@ -8,7 +8,7 @@ using namespace HashData;
 Hash Hash::operator=(const Hash &h) const
 {
 
-    return Hash("");
+    return Hash();
 }
 void Hash::operator()(int o)
 {
@@ -24,13 +24,9 @@ void Hash::operator()(int o)
     };
 
 }
-size_t Hash::encrypt()
+size_t Hash::encrypt(string text)
 {
     size_t encrypted = hash<string>{}(this->text);
 
     return encrypted;
-}
-size_t Hash::decrypt()
-{
-
 }

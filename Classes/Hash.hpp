@@ -15,9 +15,8 @@ namespace HashData
 
         public:
 
-            Hash(string text): text(text)
+            Hash()
             {
-                this->text = text;
 
             } 
             virtual ~Hash() = default;
@@ -26,8 +25,8 @@ namespace HashData
 
             void operator()(int o);
 
-            size_t encrypt();
-            size_t decrypt();
+            size_t encrypt(string text);
+
     };
 
 };

@@ -3,17 +3,19 @@
 #include "../Classes/Auth.hpp"
 #include "../Classes/User.hpp"
 #include "../Config/DbConfig.hpp"
+#include "../Classes/Hash.hpp"
 
 using namespace std;
 using namespace ConnectForDatabase;
 using namespace AuthSystem;
 using namespace UserGetter;
 using namespace DbConfig;
+using namespace HashData;
 
 Auth Auth::operator=(const Auth &a) const
 {
 
-    return Auth((new User("","")));
+    return Auth((new User("","")),(new Hash()));
 }
 void Auth::operator()(int o)
 {
@@ -50,7 +52,7 @@ bool Auth::registerUser()
 
     Connect::selectDB(&conn,dbConfig["database"].c_str());
 
-    string query = "INSERT INTO users(login,password) VALUES('"+Connect::escapeString(&conn,this->u->getEmail().c_str())+"','"+Connect::escapeString(&conn,this->u->getPassword().c_str())+"')";
+    string query = "INSERT INTO users(login,password) VALUES('"+Connect::escapeString(&conn,this->u->getEmail().c_str())+"','"+Connect::escapeString(&conn,reinterpret_cast<const char *>(this->h->encrypt(this->u->getPassword().c_str())))+"')";
 
     bool isRegistered = Connect::execQuery(&conn,query) && this->checkIfLoginExists() && this->u->getPassword()!="";
 
