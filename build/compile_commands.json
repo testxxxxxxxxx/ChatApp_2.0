@@ -11,6 +11,11 @@
 },
 {
   "directory": "/root/project/build",
+  "command": "/usr/bin/g++   -I/usr/include/mysql  -g   -o CMakeFiles/test_0.dir/Scripts/scriptsGroup.cpp.o -c /root/project/Scripts/scriptsGroup.cpp",
+  "file": "/root/project/Scripts/scriptsGroup.cpp"
+},
+{
+  "directory": "/root/project/build",
   "command": "/usr/bin/g++   -I/usr/include/mysql  -g   -o CMakeFiles/test_0.dir/Scripts/scriptsHash.cpp.o -c /root/project/Scripts/scriptsHash.cpp",
   "file": "/root/project/Scripts/scriptsHash.cpp"
 },

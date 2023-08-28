@@ -223,6 +223,33 @@ Scripts/scriptsConnect.cpp.s:
 	$(MAKE) -f CMakeFiles/test_0.dir/build.make CMakeFiles/test_0.dir/Scripts/scriptsConnect.cpp.s
 .PHONY : Scripts/scriptsConnect.cpp.s
 
+Scripts/scriptsGroup.o: Scripts/scriptsGroup.cpp.o
+
+.PHONY : Scripts/scriptsGroup.o
+
+# target to build an object file
+Scripts/scriptsGroup.cpp.o:
+	$(MAKE) -f CMakeFiles/test_0.dir/build.make CMakeFiles/test_0.dir/Scripts/scriptsGroup.cpp.o
+.PHONY : Scripts/scriptsGroup.cpp.o
+
+Scripts/scriptsGroup.i: Scripts/scriptsGroup.cpp.i
+
+.PHONY : Scripts/scriptsGroup.i
+
+# target to preprocess a source file
+Scripts/scriptsGroup.cpp.i:
+	$(MAKE) -f CMakeFiles/test_0.dir/build.make CMakeFiles/test_0.dir/Scripts/scriptsGroup.cpp.i
+.PHONY : Scripts/scriptsGroup.cpp.i
+
+Scripts/scriptsGroup.s: Scripts/scriptsGroup.cpp.s
+
+.PHONY : Scripts/scriptsGroup.s
+
+# target to generate assembly for a file
+Scripts/scriptsGroup.cpp.s:
+	$(MAKE) -f CMakeFiles/test_0.dir/build.make CMakeFiles/test_0.dir/Scripts/scriptsGroup.cpp.s
+.PHONY : Scripts/scriptsGroup.cpp.s
+
 Scripts/scriptsHash.o: Scripts/scriptsHash.cpp.o
 
 .PHONY : Scripts/scriptsHash.o
@@ -350,6 +377,9 @@ help:
 	@echo "... Scripts/scriptsConnect.o"
 	@echo "... Scripts/scriptsConnect.i"
 	@echo "... Scripts/scriptsConnect.s"
+	@echo "... Scripts/scriptsGroup.o"
+	@echo "... Scripts/scriptsGroup.i"
+	@echo "... Scripts/scriptsGroup.s"
 	@echo "... Scripts/scriptsHash.o"
 	@echo "... Scripts/scriptsHash.i"
 	@echo "... Scripts/scriptsHash.s"

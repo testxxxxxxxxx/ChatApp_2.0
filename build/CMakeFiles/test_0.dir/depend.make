@@ -3,6 +3,7 @@
 
 CMakeFiles/test_0.dir/Scripts/scriptsAuth.cpp.o: ../Classes/Auth.hpp
 CMakeFiles/test_0.dir/Scripts/scriptsAuth.cpp.o: ../Classes/Connect.hpp
+CMakeFiles/test_0.dir/Scripts/scriptsAuth.cpp.o: ../Classes/Hash.hpp
 CMakeFiles/test_0.dir/Scripts/scriptsAuth.cpp.o: ../Classes/User.hpp
 CMakeFiles/test_0.dir/Scripts/scriptsAuth.cpp.o: ../Config/DbConfig.hpp
 CMakeFiles/test_0.dir/Scripts/scriptsAuth.cpp.o: ../Scripts/scriptsAuth.cpp
@@ -10,6 +11,9 @@ CMakeFiles/test_0.dir/Scripts/scriptsAuth.cpp.o: ../Scripts/scriptsAuth.cpp
 CMakeFiles/test_0.dir/Scripts/scriptsConnect.cpp.o: ../Classes/Connect.hpp
 CMakeFiles/test_0.dir/Scripts/scriptsConnect.cpp.o: ../Scripts/scriptsConnect.cpp
 
+CMakeFiles/test_0.dir/Scripts/scriptsGroup.cpp.o: ../Scripts/scriptsGroup.cpp
+
+CMakeFiles/test_0.dir/Scripts/scriptsHash.cpp.o: ../Classes/Hash.hpp
 CMakeFiles/test_0.dir/Scripts/scriptsHash.cpp.o: ../Scripts/scriptsHash.cpp
 
 CMakeFiles/test_0.dir/Scripts/scriptsMessage.cpp.o: ../Classes/Connect.hpp
@@ -24,6 +28,7 @@ CMakeFiles/test_0.dir/Scripts/scriptsUser.cpp.o: ../Scripts/scriptsUser.cpp
 
 CMakeFiles/test_0.dir/main.cpp.o: ../Classes/Auth.hpp
 CMakeFiles/test_0.dir/main.cpp.o: ../Classes/Connect.hpp
+CMakeFiles/test_0.dir/main.cpp.o: ../Classes/Hash.hpp
 CMakeFiles/test_0.dir/main.cpp.o: ../Classes/User.hpp
 CMakeFiles/test_0.dir/main.cpp.o: ../main.cpp
 

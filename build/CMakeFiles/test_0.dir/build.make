@@ -83,9 +83,22 @@ CMakeFiles/test_0.dir/Scripts/scriptsConnect.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_0.dir/Scripts/scriptsConnect.cpp.s"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/project/Scripts/scriptsConnect.cpp -o CMakeFiles/test_0.dir/Scripts/scriptsConnect.cpp.s
 
+CMakeFiles/test_0.dir/Scripts/scriptsGroup.cpp.o: CMakeFiles/test_0.dir/flags.make
+CMakeFiles/test_0.dir/Scripts/scriptsGroup.cpp.o: ../Scripts/scriptsGroup.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/test_0.dir/Scripts/scriptsGroup.cpp.o"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_0.dir/Scripts/scriptsGroup.cpp.o -c /root/project/Scripts/scriptsGroup.cpp
+
+CMakeFiles/test_0.dir/Scripts/scriptsGroup.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_0.dir/Scripts/scriptsGroup.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/project/Scripts/scriptsGroup.cpp > CMakeFiles/test_0.dir/Scripts/scriptsGroup.cpp.i
+
+CMakeFiles/test_0.dir/Scripts/scriptsGroup.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_0.dir/Scripts/scriptsGroup.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/project/Scripts/scriptsGroup.cpp -o CMakeFiles/test_0.dir/Scripts/scriptsGroup.cpp.s
+
 CMakeFiles/test_0.dir/Scripts/scriptsHash.cpp.o: CMakeFiles/test_0.dir/flags.make
 CMakeFiles/test_0.dir/Scripts/scriptsHash.cpp.o: ../Scripts/scriptsHash.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/test_0.dir/Scripts/scriptsHash.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/test_0.dir/Scripts/scriptsHash.cpp.o"
 	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_0.dir/Scripts/scriptsHash.cpp.o -c /root/project/Scripts/scriptsHash.cpp
 
 CMakeFiles/test_0.dir/Scripts/scriptsHash.cpp.i: cmake_force
@@ -98,7 +111,7 @@ CMakeFiles/test_0.dir/Scripts/scriptsHash.cpp.s: cmake_force
 
 CMakeFiles/test_0.dir/Scripts/scriptsMessage.cpp.o: CMakeFiles/test_0.dir/flags.make
 CMakeFiles/test_0.dir/Scripts/scriptsMessage.cpp.o: ../Scripts/scriptsMessage.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/test_0.dir/Scripts/scriptsMessage.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/test_0.dir/Scripts/scriptsMessage.cpp.o"
 	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_0.dir/Scripts/scriptsMessage.cpp.o -c /root/project/Scripts/scriptsMessage.cpp
 
 CMakeFiles/test_0.dir/Scripts/scriptsMessage.cpp.i: cmake_force
@@ -111,7 +124,7 @@ CMakeFiles/test_0.dir/Scripts/scriptsMessage.cpp.s: cmake_force
 
 CMakeFiles/test_0.dir/Scripts/scriptsUser.cpp.o: CMakeFiles/test_0.dir/flags.make
 CMakeFiles/test_0.dir/Scripts/scriptsUser.cpp.o: ../Scripts/scriptsUser.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/test_0.dir/Scripts/scriptsUser.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/test_0.dir/Scripts/scriptsUser.cpp.o"
 	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_0.dir/Scripts/scriptsUser.cpp.o -c /root/project/Scripts/scriptsUser.cpp
 
 CMakeFiles/test_0.dir/Scripts/scriptsUser.cpp.i: cmake_force
@@ -124,7 +137,7 @@ CMakeFiles/test_0.dir/Scripts/scriptsUser.cpp.s: cmake_force
 
 CMakeFiles/test_0.dir/main.cpp.o: CMakeFiles/test_0.dir/flags.make
 CMakeFiles/test_0.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/test_0.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/test_0.dir/main.cpp.o"
 	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_0.dir/main.cpp.o -c /root/project/main.cpp
 
 CMakeFiles/test_0.dir/main.cpp.i: cmake_force
@@ -139,6 +152,7 @@ CMakeFiles/test_0.dir/main.cpp.s: cmake_force
 test_0_OBJECTS = \
 "CMakeFiles/test_0.dir/Scripts/scriptsAuth.cpp.o" \
 "CMakeFiles/test_0.dir/Scripts/scriptsConnect.cpp.o" \
+"CMakeFiles/test_0.dir/Scripts/scriptsGroup.cpp.o" \
 "CMakeFiles/test_0.dir/Scripts/scriptsHash.cpp.o" \
 "CMakeFiles/test_0.dir/Scripts/scriptsMessage.cpp.o" \
 "CMakeFiles/test_0.dir/Scripts/scriptsUser.cpp.o" \
@@ -149,6 +163,7 @@ test_0_EXTERNAL_OBJECTS =
 
 test_0: CMakeFiles/test_0.dir/Scripts/scriptsAuth.cpp.o
 test_0: CMakeFiles/test_0.dir/Scripts/scriptsConnect.cpp.o
+test_0: CMakeFiles/test_0.dir/Scripts/scriptsGroup.cpp.o
 test_0: CMakeFiles/test_0.dir/Scripts/scriptsHash.cpp.o
 test_0: CMakeFiles/test_0.dir/Scripts/scriptsMessage.cpp.o
 test_0: CMakeFiles/test_0.dir/Scripts/scriptsUser.cpp.o
@@ -156,7 +171,7 @@ test_0: CMakeFiles/test_0.dir/main.cpp.o
 test_0: CMakeFiles/test_0.dir/build.make
 test_0: /usr/lib/x86_64-linux-gnu/libcurl.so
 test_0: CMakeFiles/test_0.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable test_0"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable test_0"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_0.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
