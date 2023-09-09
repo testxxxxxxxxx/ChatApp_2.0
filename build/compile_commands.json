@@ -21,6 +21,11 @@
 },
 {
   "directory": "/root/project/build",
+  "command": "/usr/bin/g++   -I/usr/include/mysql  -g   -o CMakeFiles/test_0.dir/Scripts/scriptsMember.cpp.o -c /root/project/Scripts/scriptsMember.cpp",
+  "file": "/root/project/Scripts/scriptsMember.cpp"
+},
+{
+  "directory": "/root/project/build",
   "command": "/usr/bin/g++   -I/usr/include/mysql  -g   -o CMakeFiles/test_0.dir/Scripts/scriptsMessage.cpp.o -c /root/project/Scripts/scriptsMessage.cpp",
   "file": "/root/project/Scripts/scriptsMessage.cpp"
 },

@@ -60,6 +60,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     "/root/project/Scripts/scriptsConnect.cpp"
     "/root/project/Scripts/scriptsGroup.cpp"
     "/root/project/Scripts/scriptsHash.cpp"
+    "/root/project/Scripts/scriptsMember.cpp"
     "/root/project/Scripts/scriptsMessage.cpp"
     "/root/project/Scripts/scriptsUser.cpp"
     "/root/project/main.cpp"

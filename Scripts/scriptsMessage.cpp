@@ -35,7 +35,10 @@ bool Message::createMessage(User *to)
 
     Connect::selectDB(&conn,dbConfig["database"].c_str());
 
-    string query = "INSERT INTO messages(from,to,content) VALUES('"+Connect::escapeString(&conn,(const char *)this->user->getId())+"',"+Connect::escapeString(&conn,(const char *)to->getId())+"',"+Connect::escapeString(&conn,this->content.c_str())+"')";
+    string query = "INSERT INTO messages(from,to,content,group_id) VALUES('"+Connect::escapeString(&conn,(const char *)this->user->getId())
+    +"',"+Connect::escapeString(&conn,(const char *)to->getId())
+    +"',"+Connect::escapeString(&conn,this->content.c_str())
+    +"')";
 
     if(!Connect::execQuery(&conn,query))
         return false;
@@ -49,7 +52,8 @@ string *Message::getMessage()
 
     Connect::selectDB(&conn,dbConfig["database"].c_str());
 
-    string query = "SELECT m.from,m.to,m.content FROM messages AS m WHERE m.to="+Connect::escapeString(&conn,(const char *)this->user->getId());
+    string query = "SELECT m.from,m.to,m.content FROM messages AS m WHERE m.to="
+    +Connect::escapeString(&conn,(const char *)this->user->getId());
 
     string *data = Connect::readData(&conn,query);
 

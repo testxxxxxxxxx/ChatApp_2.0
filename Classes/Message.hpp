@@ -2,9 +2,11 @@
 
 #include <iostream>
 #include "User.hpp"
+#include "Group.hpp"
 
 using namespace std;
 using namespace UserGetter;
+using namespace Groups;
 
 #pragma once
 
@@ -14,13 +16,13 @@ namespace MessageSystem
 {
     class Message
     {
-        int id,from,to;
+        int id, from, to;
         User *user;
         string content;
 
         public:
 
-            Message(int id,User *user,int to,string content) : id(id),user(user),to(to),content(content)
+            Message(int id, User *user, int to, string content) : id(id),user(user),to(to),content(content)
             {
                 this->id = id;
                 this->from = user->getId();

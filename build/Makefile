@@ -277,6 +277,33 @@ Scripts/scriptsHash.cpp.s:
 	$(MAKE) -f CMakeFiles/test_0.dir/build.make CMakeFiles/test_0.dir/Scripts/scriptsHash.cpp.s
 .PHONY : Scripts/scriptsHash.cpp.s
 
+Scripts/scriptsMember.o: Scripts/scriptsMember.cpp.o
+
+.PHONY : Scripts/scriptsMember.o
+
+# target to build an object file
+Scripts/scriptsMember.cpp.o:
+	$(MAKE) -f CMakeFiles/test_0.dir/build.make CMakeFiles/test_0.dir/Scripts/scriptsMember.cpp.o
+.PHONY : Scripts/scriptsMember.cpp.o
+
+Scripts/scriptsMember.i: Scripts/scriptsMember.cpp.i
+
+.PHONY : Scripts/scriptsMember.i
+
+# target to preprocess a source file
+Scripts/scriptsMember.cpp.i:
+	$(MAKE) -f CMakeFiles/test_0.dir/build.make CMakeFiles/test_0.dir/Scripts/scriptsMember.cpp.i
+.PHONY : Scripts/scriptsMember.cpp.i
+
+Scripts/scriptsMember.s: Scripts/scriptsMember.cpp.s
+
+.PHONY : Scripts/scriptsMember.s
+
+# target to generate assembly for a file
+Scripts/scriptsMember.cpp.s:
+	$(MAKE) -f CMakeFiles/test_0.dir/build.make CMakeFiles/test_0.dir/Scripts/scriptsMember.cpp.s
+.PHONY : Scripts/scriptsMember.cpp.s
+
 Scripts/scriptsMessage.o: Scripts/scriptsMessage.cpp.o
 
 .PHONY : Scripts/scriptsMessage.o
@@ -383,6 +410,9 @@ help:
 	@echo "... Scripts/scriptsHash.o"
 	@echo "... Scripts/scriptsHash.i"
 	@echo "... Scripts/scriptsHash.s"
+	@echo "... Scripts/scriptsMember.o"
+	@echo "... Scripts/scriptsMember.i"
+	@echo "... Scripts/scriptsMember.s"
 	@echo "... Scripts/scriptsMessage.o"
 	@echo "... Scripts/scriptsMessage.i"
 	@echo "... Scripts/scriptsMessage.s"

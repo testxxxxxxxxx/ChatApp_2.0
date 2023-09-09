@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/test_0.dir/Scripts/scriptsConnect.cpp.o"
   "CMakeFiles/test_0.dir/Scripts/scriptsGroup.cpp.o"
   "CMakeFiles/test_0.dir/Scripts/scriptsHash.cpp.o"
+  "CMakeFiles/test_0.dir/Scripts/scriptsMember.cpp.o"
   "CMakeFiles/test_0.dir/Scripts/scriptsMessage.cpp.o"
   "CMakeFiles/test_0.dir/Scripts/scriptsUser.cpp.o"
   "CMakeFiles/test_0.dir/main.cpp.o"

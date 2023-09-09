@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/root/project/Scripts/scriptsConnect.cpp" "/root/project/build/CMakeFiles/test_0.dir/Scripts/scriptsConnect.cpp.o"
   "/root/project/Scripts/scriptsGroup.cpp" "/root/project/build/CMakeFiles/test_0.dir/Scripts/scriptsGroup.cpp.o"
   "/root/project/Scripts/scriptsHash.cpp" "/root/project/build/CMakeFiles/test_0.dir/Scripts/scriptsHash.cpp.o"
+  "/root/project/Scripts/scriptsMember.cpp" "/root/project/build/CMakeFiles/test_0.dir/Scripts/scriptsMember.cpp.o"
   "/root/project/Scripts/scriptsMessage.cpp" "/root/project/build/CMakeFiles/test_0.dir/Scripts/scriptsMessage.cpp.o"
   "/root/project/Scripts/scriptsUser.cpp" "/root/project/build/CMakeFiles/test_0.dir/Scripts/scriptsUser.cpp.o"
   "/root/project/main.cpp" "/root/project/build/CMakeFiles/test_0.dir/main.cpp.o"
